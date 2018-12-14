@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Students List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+ 	<ion-item (click)="getInfo(i)" clear ion-item *ngFor = "let student of students, let i = index">
+ 		{{student["First_name"]}}
+ 	</ion-item>
+ </ion-list>
+</ion-content>

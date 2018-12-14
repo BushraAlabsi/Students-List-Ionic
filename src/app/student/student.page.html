@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{student["First_name"]}} {{ student["Last_name"]}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<h3>First Name: {{ student["First_name"] }}</h3>
+<h3>Last Name: {{ student["Last_name"] }}</h3>
+<h3>Birth Date: {{ student["Birth_date"].toDateString() }}</h3>
+<h3>Email: {{ student.Email }}</h3>
+</ion-content>
